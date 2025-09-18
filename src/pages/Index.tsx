@@ -26,7 +26,7 @@ const Index = () => {
         
         <Button 
           size="lg" 
-          onClick={() => navigate("/student-portal")}
+          onClick={() => navigate("/dashboard")}
           className="px-8 py-6 text-lg font-semibold"
         >
           Enter Student Portal
