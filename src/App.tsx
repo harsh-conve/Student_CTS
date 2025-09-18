@@ -16,8 +16,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/Student_CTS">
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/dashboard" element={<StudentLandingPage />} />
+          {/* <Route path="/" element={<Index />} /> */}
+          <Route path="/" element={<StudentLandingPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
