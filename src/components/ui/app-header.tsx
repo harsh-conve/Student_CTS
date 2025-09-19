@@ -7,7 +7,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { GraduationCap, User, Settings, LogOut } from "lucide-react";
+import { User, Settings, LogOut } from "lucide-react";
+import ctsLogo from "@/assets/cts_logo.png";
 
 interface AppHeaderProps {
   studentName: string;
@@ -21,9 +22,11 @@ export const AppHeader = ({ studentName, studentAvatar }: AppHeaderProps) => {
         <div className="flex items-center justify-between">
           {/* Logo and App Name */}
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg">
-              <GraduationCap className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img 
+              src={ctsLogo} 
+              alt="CTS Logo" 
+              className="h-10 w-auto"
+            />
             <div>
               <h1 className="text-lg font-semibold text-foreground leading-tight">
                 Learning Outcome Based
